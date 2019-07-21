@@ -11,6 +11,21 @@ class TechList extends Component {
     ],
   };
 
+  // executado assim que o componente é exibido em tela
+  componentDidMount() {
+
+  }
+
+  // executado sempre que houver alguma alteração nas props ou estado
+  componentDidUpdate(prevProps, prevState) {
+    // this.props, this.state
+  }
+
+  // executado quando o componente deixa de existir
+  componentWillUnmount() {
+
+  }
+
   handleInputChange = e => {
     this.setState({ newTech: e.target.value });
   }
